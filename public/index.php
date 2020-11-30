@@ -1,5 +1,7 @@
 <?php
 
+define('ENVIRONMENT', 'development');
+
 // Valid PHP Version?
 $minPHPVersion = '7.2';
 if (phpversion() < $minPHPVersion)
