@@ -1,0 +1,50 @@
+CRITICAL - 2020-11-30 01:46:23 --> syntax error, unexpected 'sd' (T_STRING), expecting ';' or ','
+#0 /Users/mac/Documents/Bilibili/api/system/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('/Users/mac/Docu...')
+#1 /Users/mac/Documents/Bilibili/api/system/Autoloader/Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /Users/mac/Documents/Bilibili/api/system/CodeIgniter.php(865): class_exists('\\App\\Controller...', true)
+#5 /Users/mac/Documents/Bilibili/api/system/CodeIgniter.php(390): CodeIgniter\CodeIgniter->startController()
+#6 /Users/mac/Documents/Bilibili/api/system/CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Documents/Bilibili/api/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-30 01:46:24 --> syntax error, unexpected 'sd' (T_STRING), expecting ';' or ','
+#0 /Users/mac/Documents/Bilibili/api/system/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('/Users/mac/Docu...')
+#1 /Users/mac/Documents/Bilibili/api/system/Autoloader/Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /Users/mac/Documents/Bilibili/api/system/CodeIgniter.php(865): class_exists('\\App\\Controller...', true)
+#5 /Users/mac/Documents/Bilibili/api/system/CodeIgniter.php(390): CodeIgniter\CodeIgniter->startController()
+#6 /Users/mac/Documents/Bilibili/api/system/CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Documents/Bilibili/api/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-30 01:46:25 --> syntax error, unexpected 'sd' (T_STRING), expecting ';' or ','
+#0 /Users/mac/Documents/Bilibili/api/system/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('/Users/mac/Docu...')
+#1 /Users/mac/Documents/Bilibili/api/system/Autoloader/Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /Users/mac/Documents/Bilibili/api/system/CodeIgniter.php(865): class_exists('\\App\\Controller...', true)
+#5 /Users/mac/Documents/Bilibili/api/system/CodeIgniter.php(390): CodeIgniter\CodeIgniter->startController()
+#6 /Users/mac/Documents/Bilibili/api/system/CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Documents/Bilibili/api/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-30 01:46:25 --> syntax error, unexpected 'sd' (T_STRING), expecting ';' or ','
+#0 /Users/mac/Documents/Bilibili/api/system/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('/Users/mac/Docu...')
+#1 /Users/mac/Documents/Bilibili/api/system/Autoloader/Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /Users/mac/Documents/Bilibili/api/system/CodeIgniter.php(865): class_exists('\\App\\Controller...', true)
+#5 /Users/mac/Documents/Bilibili/api/system/CodeIgniter.php(390): CodeIgniter\CodeIgniter->startController()
+#6 /Users/mac/Documents/Bilibili/api/system/CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Documents/Bilibili/api/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-11-30 01:47:13 --> syntax error, unexpected 'sd' (T_STRING), expecting ';' or ','
+#0 /Users/mac/Documents/Bilibili/api/system/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('/Users/mac/Docu...')
+#1 /Users/mac/Documents/Bilibili/api/system/Autoloader/Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /Users/mac/Documents/Bilibili/api/system/CodeIgniter.php(865): class_exists('\\App\\Controller...', true)
+#5 /Users/mac/Documents/Bilibili/api/system/CodeIgniter.php(390): CodeIgniter\CodeIgniter->startController()
+#6 /Users/mac/Documents/Bilibili/api/system/CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mac/Documents/Bilibili/api/public/index.php(47): CodeIgniter\CodeIgniter->run()
+#8 {main}
