@@ -49,7 +49,7 @@
 # DATABASE
 #--------------------------------------------------------------------
 
-# database.default.hostname = localhost
+database.default.hostname = localhost
 # database.default.database = ci4
 # database.default.username = root
 # database.default.password = root
