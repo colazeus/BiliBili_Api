@@ -12,8 +12,10 @@ BiliBili-API摘录
 * rid 类目ID
     
     例：
-    * 1=综合
-    * 3=翻唱
+    * 1=动画
+    * 3=音乐
+    * 168=国创
+    
     
 * day 排行时间
     
@@ -24,3 +26,5 @@ BiliBili-API摘录
 
 参数：
 * rid 类目ID
+
+>接口：https://api.bilibili.com/pgc/season/rank/web/list?day=3&season_type=4
