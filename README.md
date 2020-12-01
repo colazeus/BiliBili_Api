@@ -18,3 +18,9 @@ BiliBili-API摘录
 * day 排行时间
     
     可选：3/7
+
+### 排行榜页
+>接口：https://api.bilibili.com/x/web-interface/ranking/v2?rid=1&type=all
+
+参数：
+* rid 类目ID
