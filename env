@@ -50,10 +50,10 @@ app.baseURL = 'http://api.bilibilianalysis.com/'
 #--------------------------------------------------------------------
 
 database.default.hostname = localhost
-# database.default.database = ci4
-# database.default.username = root
-# database.default.password = root
-# database.default.DBDriver = MySQLi
+database.default.database = ba
+database.default.username = bilibili
+database.default.password = u14YfU1YwLf12igVu14YfU1YwLf12igV
+database.default.DBDriver = MySQLi
 
 # database.tests.hostname = localhost
 # database.tests.database = ci4
