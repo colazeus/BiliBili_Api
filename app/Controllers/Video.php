@@ -31,8 +31,6 @@ class Video extends BaseController
           'expiration' => ['expiration',true]
         ]);
 
-        //var_dump($query);
-
         //请求API获取视频信息
         $video = api("video", ['bvid' => $query['bvid']]);
 
@@ -60,7 +58,21 @@ class Video extends BaseController
         ];
 
         $model = new VideoModel();
-        $data = $model->saveVideo($n_query);
+        $expiration = false;
+
+        switch($query['expiration']){
+          case -1:
+            $expiration = false;
+            break;
+          case 0:
+            $expiration = 0;
+            break;
+          default:
+            $expiration = date("Y-m-d",strtotime("+".$expiration." day"));
+            break;
+        }
+        $data = $model->saveVideo($n_query,$expiration);
+
         if($data){
           return $this->respond(formatSuccess($data,'视频创建成功'), 200);
         }

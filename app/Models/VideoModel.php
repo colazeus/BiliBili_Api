@@ -11,7 +11,7 @@ class VideoModel extends \CodeIgniter\Model
         return $query->getResultArray();
     }
 
-    public function saveVideo($data)
+    public function saveVideo($data,$expiration=false)
     {
         $db = db_connect();
 
@@ -37,9 +37,8 @@ class VideoModel extends \CodeIgniter\Model
         }
         //如果不存在就新建条目
         else {
-            $var = $builder->insert($data);
+            $builder->insert($data);
             $vid = $this->db->query('SELECT LAST_INSERT_ID()')->getRowArray()['LAST_INSERT_ID()'];
-
         }
         //自动建立一条刷新
         $builder = $db->table('base_video_data');
@@ -60,13 +59,53 @@ class VideoModel extends \CodeIgniter\Model
         if ($this->db->transStatus() === false) {
           return false;
         }
+
+        if($expiration !== false){
+          $this->saveGeter($vid,$data['bvid'],$expiration);
+        }
+
+        return ['vid'=>$vid];
+
+
+    }
+
+    //创建一个捕捉规则
+    public function saveGeter($vid,$bvid,$expiration)
+    {
+        $db = db_connect();
+        $builder = $db->table('get_video_list');
+
+        if($expiration == 0){
+          $expiration_type = 0;
+          $expiration_time = "2099-01-01";
+        }
         else{
-          return ['vid'=>$vid];
+          $expiration_type = 1;
+          $expiration_time = $expiration;
+        }
+
+        $query = $builder->getWhere(['bvid'=>$bvid]);
+        $res = $query->getRowArray();
+
+        if ($res != NULL){
+          $builder->where('bvid', $bvid);
+          $builder->update([
+            'expiration_type' => $expiration_type,
+            'expiration_time' => $expiration_time
+          ]);
+        }
+        else{
+          $builder->insert([
+            'vid' => $vid,
+            'bvid' => $bvid,
+            'expiration_type' => $expiration_type,
+            'expiration_time' => $expiration_time
+          ]);
         }
 
     }
 
-    //新建
+    //更新视频信息
     public function updateVideoInfo()
     {
     }

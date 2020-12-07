@@ -38,12 +38,12 @@ if (! function_exists('getApi'))
       $parname = $value[0];
       $isNull = $value[1];
 
-      if(service('request')->getPostGet($parname)){
+      if(service('request')->getPostGet($parname) !== ""){
         $data[$key] = service('request')->getPostGet($parname);
       }
       else if($isNull){
         if(isset($value[2])){
-          echo json_encode(formatError($message));
+          echo json_encode(formatError($value[2]));
         }
         else{
           echo json_encode(formatError('缺少必要的参数:'.$parname));
