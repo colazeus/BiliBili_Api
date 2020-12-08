@@ -15,6 +15,7 @@ namespace App\Controllers;
  */
 
 use CodeIgniter\Controller;
+use App\Libraries\Jwt;
 
 class BaseController extends Controller
 {
@@ -41,6 +42,7 @@ class BaseController extends Controller
 		// E.g.:
 		// $this->session = \Config\Services::session();
 		helper("api_helper");
+		$this->jwt = new Jwt();
 	}
 
 }

@@ -38,8 +38,10 @@ if (! function_exists('getApi'))
       $parname = $value[0];
       $isNull = $value[1];
 
-      if(service('request')->getPostGet($parname) !== ""){
-        $data[$key] = service('request')->getPostGet($parname);
+      $par = service('request')->getPostGet($parname);
+
+      if(!is_array($par) || count($par)>0){
+        $data[$key] = $par;
       }
       else if($isNull){
         if(isset($value[2])){
@@ -62,6 +64,7 @@ if (! function_exists('getApi'))
     return $res;
   }
 
+  //正确格式化
   function formatSuccess($data,$message='',$code=0){
     $res = ['code' => $code,
       'data' => $data,
