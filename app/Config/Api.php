@@ -10,4 +10,22 @@ class Api extends BaseConfig
     'type' => 'GET',
   ];
 
+  //视频搜索
+  public $searchVideo = [
+    'url' => 'https://api.bilibili.com/x/space/arc/search',
+    'type' => 'GET',
+  ];
+
+  //周榜列表
+  public $seriesList = [
+    'url' => 'https://api.bilibili.com/x/web-interface/popular/series/list',
+    'type' => 'GET',
+  ];
+
+  //周榜排行
+  public $series = [
+    'url' => 'https://api.bilibili.com/x/web-interface/popular/series/one',
+    'type' => 'GET',
+  ];
+
 }
